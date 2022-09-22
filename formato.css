@@ -1,0 +1,13 @@
+#body{
+
+    background-color: #ffffbf
+}
+
+#header{
+display: flexbox;
+
+}
+
+#logo{
+    border-radius: 50%;
+}
