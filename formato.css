@@ -1,13 +1,222 @@
-#body{
-
-    background-color: #ffffbf
+@font-face {
+  font-family: "PrettyMeowRegular";
+  src: url("FONT_PrettyMeowRegular.ttf");
 }
 
-#header{
-display: flexbox;
-
+@font-face {
+  font-family: "CathelineRegular";
+  src: url("FONT_CathelineRegular.ttf");
 }
 
-#logo{
-    border-radius: 50%;
+@font-face {
+  font-family: "KawaiiBubble-Regular";
+  src: url("FONT_KawaiiBubble-Regular.ttf");
 }
+
+/* TODAS LAS OPCIONES DE ATRIBUTOS (MENOS LOS TITULOS) VAN A TENER LA MISMA LETRA */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: CathelineRegular;
+  vertical-align: baseline;
+}
+
+h1 {
+  font-size: revert;
+  font-family: KawaiiBubble-Regular;
+  vertical-align: baseline;
+}
+
+
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  /* esta animacion sale de https://developer.mozilla.org/en-US/docs/Web/CSS/animation */
+
+  background-color: #ff9a87;
+  animation: 60s linear 0s infinite alternate animating-multiple-properties;
+
+  margin: 0%;
+  padding: 1rem;
+}
+/* it is possible to animate multiple properties in a single animation */
+@keyframes animating-multiple-properties {
+  from {
+    background-color: #ffffbf;
+  }
+  to {
+    transform: translateY(0);
+    background-color: #ff9a87;
+    /* unset properties i.e. 'filter' will revert to default values */
+  }
+}
+
+.navegador {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  align-items: center;
+}
+
+.navegador a {
+  display: flex;
+  color: white;
+  margin: 0.1rem;
+  padding: 0.5rem;
+  width: -webkit-fill-available;
+  justify-content: space-around;
+  background-color: #ff2f82;
+  border-radius: 5%;
+  align-content: center;
+  align-items: center;
+  text-decoration: solid;
+}
+
+.logo_gatito {
+  border-radius: 50%;
+/* EXPLICACION DE ANIMACION EN https://linuxhint.com/rotate-animation-css/*/
+animation: 60s linear 0s infinite alternate rotation;
+
+
+}
+@keyframes rotation {
+    from {
+        transform: rotate(-90deg);
+
+    }
+    to {
+        transform: rotate(90deg);    }
+    }
+
+.contenido {
+     /* EXPLICACION DE GRID EN https://developer.mozilla.org/es/docs/Web/CSS/CSS_Grid_Layout */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    grid-auto-rows: minmax(100px, auto);
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0px;
+    padding: 0.2rem ;
+    background-color: #ffffbf;
+    justify-items: center;
+    align-content: center;
+  }
+.contenido div {
+    display: grid;
+width: -webkit-fill-available;
+height: 5rem;
+padding: 2rem;
+margin: 0rem;
+justify-content: space-evenly;
+align-items: center;
+justify-items: center;
+align-content: center;
+border-radius: 1%;
+    
+
+
+}
+  #grid_1 {
+    grid-column: 1 / 4;
+    grid-row: 1;
+  }
+ /* EXPLICACION DE PINTADO ALTERNADO EN https://developer.mozilla.org/es/docs/Web/CSS/:nth-child */
+  .contenido div:nth-child(even) {
+    background-color:#ffe8a8;
+  }
+
+    .contenido div:nth-child(odd) {     
+        background-color: #ff9a87;;
+    }
+
+.footer{
+    background-color:black; 
+
+  }
