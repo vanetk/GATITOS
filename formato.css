@@ -107,8 +107,6 @@ h1 {
   vertical-align: baseline;
 }
 
-
-
 .header {
   display: flex;
   flex-direction: row;
@@ -160,63 +158,57 @@ h1 {
 
 .logo_gatito {
   border-radius: 50%;
-/* EXPLICACION DE ANIMACION EN https://linuxhint.com/rotate-animation-css/*/
-animation: 60s linear 0s infinite alternate rotation;
-
-
+  /* EXPLICACION DE ANIMACION EN https://linuxhint.com/rotate-animation-css/*/
+  animation: 60s linear 0s infinite alternate rotation;
 }
 @keyframes rotation {
-    from {
-        transform: rotate(-90deg);
-
-    }
-    to {
-        transform: rotate(90deg);    }
-    }
+  from {
+    transform: rotate(-90deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+}
 
 .contenido {
-     /* EXPLICACION DE GRID EN https://developer.mozilla.org/es/docs/Web/CSS/CSS_Grid_Layout */
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 5px;
-    grid-auto-rows: minmax(100px, auto);
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 0px;
-    padding: 0.2rem ;
-    background-color: #ffffbf;
-    justify-items: center;
-    align-content: center;
-  }
-.contenido div {
-    display: grid;
-width: -webkit-fill-available;
-height: 5rem;
-padding: 2rem;
-margin: 0rem;
-justify-content: space-evenly;
-align-items: center;
-justify-items: center;
-align-content: center;
-border-radius: 1%;
-    
-
-
+  /* EXPLICACION DE GRID EN https://developer.mozilla.org/es/docs/Web/CSS/CSS_Grid_Layout */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  grid-auto-rows: minmax(100px, auto);
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0px;
+  padding: 0.2rem;
+  background-color: #ffffbf;
+  justify-items: center;
+  align-content: center;
 }
-  #grid_1 {
-    grid-column: 1 / 4;
-    grid-row: 1;
-  }
- /* EXPLICACION DE PINTADO ALTERNADO EN https://developer.mozilla.org/es/docs/Web/CSS/:nth-child */
-  .contenido div:nth-child(even) {
-    background-color:#ffe8a8;
-  }
+.contenido div {
+  display: grid;
+  width: -webkit-fill-available;
+  height: 5rem;
+  padding: 2rem;
+  margin: 0rem;
+  justify-content: space-evenly;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  border-radius: 1%;
+}
+#grid_1 {
+  grid-column: 1 / 4;
+  grid-row: 1;
+}
+/* EXPLICACION DE PINTADO ALTERNADO EN https://developer.mozilla.org/es/docs/Web/CSS/:nth-child */
+.contenido div:nth-child(even) {
+  background-color: #ffe8a8;
+}
 
-    .contenido div:nth-child(odd) {     
-        background-color: #ff9a87;;
-    }
+.contenido div:nth-child(odd) {
+  background-color: #ff9a87;
+}
 
-.footer{
-    background-color:black; 
-
-  }
+.footer {
+  background-color: black;
+}
