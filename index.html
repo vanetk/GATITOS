@@ -5,6 +5,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- este es el script que explota el logo -->
+    <script src="confetti.min.js"></script>
+    <!-- este es el favicon de la pagina -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon-apple-touch-icon.png"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="favicon-site.webmanifest" />
+
     <title>Document</title>
 
     <!-- ¿Cuándo se entrega?
@@ -36,6 +48,7 @@
       <div class="logo">
         <img
           class="logo_gatito"
+          id="explota"
           src="imagenes_GATITO_ASTRONAUTA.jpg"
           alt="LOGO"
           width="200"
@@ -55,9 +68,32 @@
     <div class="contenido">
       <div id="grid_1">Bienvenido a la pagina de los gatitos</div>
 
-      <div>GATO1</div>
-      <div>GATO2</div>
-      <div>GATO3</div>
+      <div class="card" id="grid_2">
+        <img
+          src="https://images.unsplash.com/photo-1506755855567-92ff770e8d00?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2787&q=80"
+          width= 100%
+          alt=""
+          class="card-image"
+        />
+        <h3 class="card-title">A Rayas</h3>
+      </div>
+      <div class="card" id="grid_3">
+        <img
+          src="https://images.unsplash.com/photo-1606491048802-8342506d6471?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2253&q=80"
+          width=100%
+          alt=""
+          class="card-image"
+        />
+        <h3 class="card-title">Naranjitas</h3>
+      </div>
+      <div class="card" id="grid_4">
+        <img
+          src="https://images.unsplash.com/photo-1577349516274-37ff88a53627?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+          width=100%
+          alt=""
+          class="card-image"
+        />
+        <h3 class="card-title">Grises</h3>son curiosos</div>
       <div>GATO4</div>
       <div>GATO5</div>
       <div>GATO6</div>
@@ -73,5 +109,7 @@
     </div>
 
     <footer>ESTO ES EL FOOTER</footer>
+
+    <script src="javascript.js"></script>
   </body>
 </html>
