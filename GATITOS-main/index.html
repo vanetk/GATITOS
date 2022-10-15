@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="formato.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- este es el script que explota el logo -->
+    <script src="confetti.min.js"></script>
+    <script src="app.js"></script>
+    <!-- este es el favicon de la pagina -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon-apple-touch-icon.png"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="favicon-site.webmanifest" />
+    <link rel="stylesheet" href="estilos.css">
+
+    <title>Document</title>
+
+    <!-- ¿Cuándo se entrega?
+    TPO Desarrollo Web HTML, CSS y Javascript
+    Clase 22: miércoles 19 al viernes 21 de octubre de 2022. ¿Cómo se desarrollará el proyecto?
+    El proyecto web se desarrollará en grupos de 3 integrantes cada uno (obligatorio). Cada grupo deberá designar un representante de forma tal de establecer contacto directo con el Docente. Será ese integrante el que recibirá la devolución del proyecto realizada por el Docente en el transcurso de la cursada y cualquier notificación relevante realizada a lo largo del desarrollo del proyecto.
+    ¿Qué hay que entregar?
+    El TPO deberá cumplir con los siguientes requisitos:
+    SI-● Poseer al menos 4 páginas html, siendo su temática libre. En caso de ser un Sitio Web estilo One Page, el mismo deberá tener al menos 5 secciones.
+    ● Utilizar etiquetas semánticas para estructurar el sitio.
+    ● Contener un formulario de contacto con validación realizada mediante Javascript. Opcional: el formulario podrá enviar un email utilizando algún servicio externo destinado para ello.
+    ● Utilizar al menos un Iframe, íconos de FontAwesome o Flaticon; y fuentes locales o bien de Google Fonts.
+    ● Tener al menos una página totalmente responsive con 3 puntos de corte para 3 tamaños de dispositivos distintos.
+    SI-● Incorporar al menos una animación, transformación o una transición (se deberá indicar en qué parte del sitio web fue incorporada la animación).
+    SI-● Poseer una estructura HTML maquetada con Flexbox y/o Grid.
+    ● Consumir una API Rest desde JavaScript. Deberá informar la API utilizada al momento de entregar el TPO.
+    ● En caso de querer utilizar Bootstrap (no es obligatorio), sólo podrá hacerlo en la página del formulario del sitio web. No se aceptarán proyectos desarrollados íntegramente en algún Framework de CSS (Bootstrap, Materialize, Tailwind o similar).
+    ● El desarrollo web deberá subirse a un servidor on-line para poder ser navegada por el Docente. Ejemplo: GitHub Pages, Netlify o similares.
+    ● Además de los aspectos técnicos mencionados anteriormente, el proyecto deberá contemplar aspectos de diseño los cuales también serán evaluados por el Docente. Para eso se recomienda que vean el material disponible en el Aula Virtual. Seminario de Diseño Web: https://youtu.be/fVkGt2tYIj0. Para más información, ver material incluído en el Aula Virtual “Diseño”. En relación al estilo de la web (look&feel) se evaluará y considerará: maquetación del sitio web; alineación, orden  y márgenes entre los elementos; tipografía seleccionada acorde a la temática del proyecto; fotografía de calidad y optimizada para web; paleta de colores seleccionada acorde a la temática; logo utilizado en el sitio web.
+    ● Nota: el TPO es grupal, deberán sincronizar el código del TPO en Github (o similar) enviando el link del repositorio al Docente al momento de entregar el proyecto. Este requisito es obligatorio. Para más información sobre GIT, ver material incluído en el Aula Virtual “GIT”.
+    Condiciones de aprobación: para aprobar se requiere resolver el trabajo práctico en un 60% de forma correcta.
+    ¿Cómo se entrega?
+    Cada Docente informará la vía para subir el trabajo. Al momento de la entrega deberán informar: link a la web navegable, link al repositorio utilizado, integrantes y comentarios que consideren necesarios agregar a la entrega.
+    Nota: si ya tenés un proyecto comenzado para este curso, podrás usarlo para esta entrega agregándole lo que falte para cumplir con los requisitos. -->
+  </head>
+
+  <body class="toda_la_pagina">
+    <!-- proviene de https://www.freepik.com/vectors/cat-logo -->
+    <div class="header">
+      <div class="logo">
+        <img
+          class="logo_gatito"
+          id="explota"
+          src="imagenes_GATITO_ASTRONAUTA.jpg"
+          alt="LOGO"
+          width="200"
+        />
+      </div>
+      <div class="titulo">
+        <h1>PAGINA DE GATITOS!</h1>
+      </div>
+
+      <div class="menu">
+        <section class="menu__container">
+    
+            <ul class="menu__links">
+    
+                <li class="menu__item menu__item--show">
+                    <a href="#" class="menu__link">Menú <img src="arrow.png" class="menu_arrow"></a>
+    
+                    <ul class="menu__nesting">
+                        <li class="menu__inside">
+                            <a href="kittens.html" class="menu__link menu__link--inside">Gatitos</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="gatitos_del_mundo.html" class="menu__link menu__link--inside">Gatos del mundo</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="curiosidades.html" class="menu__link menu__link--inside">Curiosidades</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="quienes_somos.html" class="menu__link menu__link--inside">Nosotras</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+    
+            <div class="menu__hamburguer">
+                <img src="menu.png" class="menu__img">
+            </div>
+    
+        </section>
+    
+      </div>
+
+    </div>
+    
+    <div class="contenido">
+      <div id="grid_1">Bienvenido a la pagina de los gatitos</div>
+
+      <div class="card" id="grid_2">
+        <img
+          src="https://images.unsplash.com/photo-1506755855567-92ff770e8d00?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2787&q=80"
+          width= 100%
+          alt=""
+          class="card-image"
+        />
+        <h3 class="card-title">A Rayas</h3>
+      </div>
+      <div class="card" id="grid_3">
+        <img
+          src="https://images.unsplash.com/photo-1606491048802-8342506d6471?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2253&q=80"
+          width=100%
+          alt=""
+          class="card-image"
+        />
+        <h3 class="card-title">Naranjitas</h3>
+      </div>
+      <div class="card" id="grid_4">
+        <img
+          src="https://images.unsplash.com/photo-1577349516274-37ff88a53627?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+          width=100%
+          alt=""
+          class="card-image"
+        />
+        <h3 class="card-title">Grises</h3>son curiosos</div>
+      <div>GATO4</div>
+      <div>GATO5</div>
+      <div>GATO6</div>
+      <div>GATO7</div>
+      <div>GATO8</div>
+      <div>GATO9</div>
+      <div>GATO10</div>
+      <div>GATO11</div>
+      <div>GATO12</div>
+      <div>GATO13</div>
+      <div>GATO14</div>
+      <div>GATO15</div>
+    </div>
+
+    <footer>ESTO ES EL FOOTER</footer>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>
