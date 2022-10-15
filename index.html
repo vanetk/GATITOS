@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- este es el script que explota el logo -->
     <script src="confetti.min.js"></script>
+    <script src="app.js"></script>
     <!-- este es el favicon de la pagina -->
     <link
       rel="apple-touch-icon"
@@ -16,6 +17,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
     <link rel="manifest" href="favicon-site.webmanifest" />
+    <link rel="stylesheet" href="estilos.css">
 
     <title>Document</title>
 
@@ -42,6 +44,7 @@
     Cada Docente informará la vía para subir el trabajo. Al momento de la entrega deberán informar: link a la web navegable, link al repositorio utilizado, integrantes y comentarios que consideren necesarios agregar a la entrega.
     Nota: si ya tenés un proyecto comenzado para este curso, podrás usarlo para esta entrega agregándole lo que falte para cumplir con los requisitos. -->
   </head>
+
   <body class="toda_la_pagina">
     <!-- proviene de https://www.freepik.com/vectors/cat-logo -->
     <div class="header">
@@ -57,14 +60,43 @@
       <div class="titulo">
         <h1>PAGINA DE GATITOS!</h1>
       </div>
-      <div class="navegador">
-        <a href="quienes_somos.html" id="div_nav_1">Nosotros</a>
 
-        <a href="kittens.html" id="div_nav_2">Gatitos bebé</a>
+      <div class="menu">
+        <section class="menu__container">
+    
+            <ul class="menu__links">
+    
+                <li class="menu__item menu__item--show">
+                    <a href="#" class="menu__link">Menú <img src="arrow.png" class="menu_arrow"></a>
+    
+                    <ul class="menu__nesting">
+                        <li class="menu__inside">
+                            <a href="kittens.html" class="menu__link menu__link--inside">Gatitos</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="gatitos_del_mundo.html" class="menu__link menu__link--inside">Gatos del mundo</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="curiosidades.html" class="menu__link menu__link--inside">Curiosidades</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="quienes_somos.html" class="menu__link menu__link--inside">Nosotras</a>
+                        </li>
+                    </ul>
+                </li>
 
-        <a href="gatitos_del_mundo.html" id="div_nav_3">Gatitos del mundo</a>
+            </ul>
+    
+            <div class="menu__hamburguer">
+                <img src="menu.png" class="menu__img">
+            </div>
+    
+        </section>
+    
       </div>
+
     </div>
+    
     <div class="contenido">
       <div id="grid_1">Bienvenido a la pagina de los gatitos</div>
 
