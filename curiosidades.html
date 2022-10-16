@@ -1,12 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/formato.css" />
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- END CSS -->
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SCRIPT LOGO (pum) -->
+    <script src="js/confetti.min.js"></script>
+    <script src="js/app.js"></script>
+    <!-- END SCRIPT LOGO -->
+
+    <!-- FAVICON -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="icons/favicon-apple-touch-icon.png"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png" />
+    <link rel="manifest" href="icons/favicon-site.webmanifest" />
+    <!-- END FAVICON -->
+
+    <title>Pagina de gatitos</title>
 </head>
-<body>
-    en construccion
-</body>
+
+<body class="toda_la_pagina">
+
+  <!-- HEADER -->
+  <div class="header">
+
+    <!-- LOGO scr:https://www.freepik.com/vectors/cat-logo -->
+    <div class="logo">
+      <img
+        class="logo_gatito"
+        id="explota"
+        src="img/imagenes_GATITO_ASTRONAUTA.jpg"
+        alt="LOGO"
+        width="200"
+      />
+    </div>
+    <!-- END LOGO -->
+
+
+    <div class="titulo">
+      <h1>PAGINA DE GATITOS!</h1>
+    </div>
+
+    <!-- MENU -->
+    <div class="menu">
+      <section class="menu__container">
+  
+          <ul class="menu__links">
+  
+              <li class="menu__item menu__item--show">
+                  <a href="#" class="menu__link">Menú <img src="icons/arrow.png" class="menu_arrow"></a>
+  
+                  <ul class="menu__nesting">
+                      <li class="menu__inside">
+                          <a href="index.html" class="menu__link menu__link--inside">Home</a>
+                      </li>
+                      <li class="menu__inside">
+                          <a href="kittens.html" class="menu__link menu__link--inside">Gatitos</a>
+                      </li>
+                      <li class="menu__inside">
+                          <a href="gatitos_del_mundo.html" class="menu__link menu__link--inside">Gatos del mundo</a>
+                      </li>
+                      <li class="menu__inside">
+                          <a href="quienes_somos.html" class="menu__link menu__link--inside">Nosotras</a>
+                      </li>
+                  </ul>
+              </li>
+
+          </ul>
+          
+          <!-- MENU RESPONSIVE: CORTE 800PX -->
+          <div class="menu__hamburguer">
+              <img src="icons/menu.png" class="menu__img">
+          </div>
+          <!-- END MENU RESPONSIVE -->
+  
+      </section>
+  
+    </div>
+    <!-- END MENU -->
+
+  </div>
+  <!-- END HEADER -->
+
+    <!-- CONTENT -->
+    <!-- END CONTENT -->
+
+    <!-- FOOTER -->
+    <footer>ESTO ES EL FOOTER</footer>
+    <!-- END FOOTER -->
+
+    <!-- CARGA JS -->
+    <script src="js/javascript.js"></script>
+    <!-- END CARGA JS -->
+  </body>
 </html>
