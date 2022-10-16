@@ -1,22 +1,22 @@
 /* FONTS */
 @font-face {
   font-family: "PrettyMeowRegular";
-  src: url("fonts/FONT_PrettyMeowRegular.ttf");
+  src: url("../fonts/FONT_PrettyMeowRegular.ttf");
 }
 
 @font-face {
   font-family: "CathelineRegular";
-  src: url("fonts/FONT_CathelineRegular.ttf");
+  src: url("../fonts/FONT_CathelineRegular.ttf");
 }
 
 @font-face {
   font-family: "KawaiiBubble-Regular";
-  src: url("fonts/FONT_KawaiiBubble-Regular.ttf");
+  src: url("../fonts/FONT_KawaiiBubble-Regular.ttf");
 }
 
 @font-face {
   font-family: "Bree-Serif";
-  src: url("fonts/FONT_BreeSerif.ttf");
+  src: url("../fonts/FONT_BreeSerif.ttf");
 }
 /* END FONTS */
 
@@ -272,7 +272,7 @@ h1 {
 /* END CARDS */
 
 .footer {
-    background-image: url(imagenes_PATITAS200PX.jpeg);
+    background-image: url(../imagenes_PATITAS200PX.jpeg);
     width: 1600px;
     height: 100px;
     background-repeat: repeat-x;
