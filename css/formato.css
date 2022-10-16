@@ -271,8 +271,36 @@ h1 {
 }
 /* END CARDS */
 
-/* FOOTER */
 .footer {
-  background-color: black;
+    background-image: url(imagenes_PATITAS200PX.jpeg);
+    width: 1600px;
+    height: 100px;
+    background-repeat: repeat-x;
+  
 }
-/* END FOOTER */
+
+.tarjetas_quienes_somos {
+    /* formato para la pagina de quienes somos */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    margin: 0px;
+    padding: 0PX;
+    background-color: #ffffbf;
+    justify-items: center;
+    align-content: stretch;
+    
+    
+  }
+  .tarjetas_quienes_somos div {
+    flex: 2;
+    padding: 25px;
+    margin: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+    align-content: stretch;
+    background-color: #ffffbf;
+    min-width: 250px
+  }
