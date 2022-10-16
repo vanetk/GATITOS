@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="formato.css" />
+    <link rel="stylesheet" href="estilos.css">
+    <!-- END CSS -->
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- este es el script que explota el logo -->
+
+    <!-- SCRIPT LOGO (pum) -->
     <script src="confetti.min.js"></script>
     <script src="app.js"></script>
-    <!-- este es el favicon de la pagina -->
+    <!-- END SCRIPT LOGO -->
+
+    <!-- FAVICON -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -17,9 +25,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
     <link rel="manifest" href="favicon-site.webmanifest" />
-    <link rel="stylesheet" href="estilos.css">
+    <!-- END FAVICON -->
 
-    <title>Document</title>
+    <title>Pagina de gatitos</title>
 
     <!-- ¿Cuándo se entrega?
     TPO Desarrollo Web HTML, CSS y Javascript
@@ -46,8 +54,11 @@
   </head>
 
   <body class="toda_la_pagina">
-    <!-- proviene de https://www.freepik.com/vectors/cat-logo -->
+
+    <!-- HEADER -->
     <div class="header">
+
+      <!-- LOGO scr:https://www.freepik.com/vectors/cat-logo -->
       <div class="logo">
         <img
           class="logo_gatito"
@@ -57,10 +68,14 @@
           width="200"
         />
       </div>
+      <!-- END LOGO -->
+
+
       <div class="titulo">
         <h1>PAGINA DE GATITOS!</h1>
       </div>
 
+      <!-- MENU -->
       <div class="menu">
         <section class="menu__container">
     
@@ -86,17 +101,22 @@
                 </li>
 
             </ul>
-    
+            
+            <!-- MENU RESPONSIVE: CORTE 800PX -->
             <div class="menu__hamburguer">
                 <img src="menu.png" class="menu__img">
             </div>
+            <!-- END MENU RESPONSIVE -->
     
         </section>
     
       </div>
+      <!-- END MENU -->
 
     </div>
-    
+    <!-- END HEADER -->
+
+    <!-- CONTENT -->
     <div class="contenido">
       <div id="grid_1">Bienvenido a la pagina de los gatitos</div>
 
@@ -139,9 +159,14 @@
       <div>GATO14</div>
       <div>GATO15</div>
     </div>
+    <!-- END CONTENT -->
 
+    <!-- FOOTER -->
     <footer>ESTO ES EL FOOTER</footer>
+    <!-- END FOOTER -->
 
+    <!-- CARGA JS -->
     <script src="javascript.js"></script>
+    <!-- END CARGA JS -->
   </body>
 </html>

@@ -1,3 +1,4 @@
+/* FONTS */
 @font-face {
   font-family: "PrettyMeowRegular";
   src: url("FONT_PrettyMeowRegular.ttf");
@@ -17,6 +18,7 @@
   font-family: "Bree-Serif";
   src: url("FONT_BreeSerif.ttf");
 }
+/* END FONTS */
 
 /* TODAS LAS OPCIONES DE ATRIBUTOS (MENOS LOS TITULOS) VAN A TENER LA MISMA LETRA */
 html,
@@ -117,14 +119,15 @@ h1 {
   justify-content: space-between;
   align-items: center;
 
-  /* esta animacion sale de https://developer.mozilla.org/en-US/docs/Web/CSS/animation */
-
+  /* HEADER ANIMATION scr: https://developer.mozilla.org/en-US/docs/Web/CSS/animation */
   background-color: #ff9a87;
   animation: 60s linear 0s infinite alternate animating-multiple-properties;
-
   margin: 0%;
   padding: 1rem;
+  /* END HEADER ANIMATION */
 }
+
+/* Key HEADER */
 /* it is possible to animate multiple properties in a single animation */
 @keyframes animating-multiple-properties {
   from {
@@ -136,6 +139,7 @@ h1 {
     /* unset properties i.e. 'filter' will revert to default values */
   }
 }
+/* END Key HEADER */
 
 /*.navegador {
   display: flex;
@@ -160,9 +164,10 @@ h1 {
   text-decoration: solid;
 }*/
 
+/* LOGO ANIMATION */
 .logo_gatito {
   border-radius: 50%;
-  /* EXPLICACION DE ANIMACION EN https://linuxhint.com/rotate-animation-css/*/
+  /* explicacion de animacion: https://linuxhint.com/rotate-animation-css/ */
   animation: 60s linear 0s infinite alternate rotation;
 }
 @keyframes rotation {
@@ -173,9 +178,11 @@ h1 {
     transform: rotate(90deg);
   }
 }
+/* END LOGO ANIMATION*/
 
+/* CONTENT */
 .contenido {
-  /* EXPLICACION DE GRID EN https://developer.mozilla.org/es/docs/Web/CSS/CSS_Grid_Layout */
+  /* explicacion de grid: https://developer.mozilla.org/es/docs/Web/CSS/CSS_Grid_Layout */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 5px;
@@ -218,7 +225,7 @@ h1 {
     grid-column: 3;
     grid-row: 2;
   }
-/* EXPLICACION DE PINTADO ALTERNADO EN https://developer.mozilla.org/es/docs/Web/CSS/:nth-child */
+/* pintado alternado: https://developer.mozilla.org/es/docs/Web/CSS/:nth-child */
 .contenido div:nth-child(even) {
   background-color: #ffe8a8;
 }
@@ -226,9 +233,9 @@ h1 {
 .contenido div:nth-child(odd) {
   background-color: #ff9a87;
 }
+/* END CONTENT */
 
-/* aca empiezo a darle formato a los cubitos del css, las cards*/
-
+/* CARDS */
 .card {
   outline: 1px solid rgba(255, 255, 255, 0.5);
   outline-offset: -8px;
@@ -262,7 +269,10 @@ h1 {
   color: black
 
 }
+/* END CARDS */
 
+/* FOOTER */
 .footer {
   background-color: black;
 }
+/* END FOOTER */

@@ -10,6 +10,7 @@ body{
     font-family: 'Bree Serif', serif;
 }
 
+/* MENU */
 .menu{
     background-color: #ff2f82;
     color: #fff;
@@ -20,7 +21,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
     height: 100%;
     margin: 0 auto;
@@ -36,12 +37,12 @@ body{
     list-style: none;
     position: relative;
     height: 100%;
-    --clip: polygon(0 0, 100% 1%, 100% 0, 0 0);
+    --clip: polygon(0 0, 100% 0%, 100% 0, 0 0);
     --transform: rotate(-90deg);
 }
 
 .menu__item:hover{
-    --clip: polygon(0 0, 100% 1%, 100% 100%, 0% 100%);
+    --clip: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
     --transform: rotate(0);
 }
 
@@ -99,6 +100,8 @@ body{
     display: block;
     width: 36px; 
 }
+
+/* MENU RESPONSIVE: CORTE 800 PX*/
 
 @media (max-width:800px){
     .menu__hamburguer{
@@ -163,4 +166,6 @@ body{
         margin-left: auto;
         border-left: 1px solid #ff9a87;
     }
+    /* END MENU RESPONSIVE*/
 }
+/* END MENU */
