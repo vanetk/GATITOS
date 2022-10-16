@@ -1,22 +1,22 @@
 /* FONTS */
 @font-face {
   font-family: "PrettyMeowRegular";
-  src: url("FONT_PrettyMeowRegular.ttf");
+  src: url("fonts/FONT_PrettyMeowRegular.ttf");
 }
 
 @font-face {
   font-family: "CathelineRegular";
-  src: url("FONT_CathelineRegular.ttf");
+  src: url("fonts/FONT_CathelineRegular.ttf");
 }
 
 @font-face {
   font-family: "KawaiiBubble-Regular";
-  src: url("FONT_KawaiiBubble-Regular.ttf");
+  src: url("fonts/FONT_KawaiiBubble-Regular.ttf");
 }
 
 @font-face {
   font-family: "Bree-Serif";
-  src: url("FONT_BreeSerif.ttf");
+  src: url("fonts/FONT_BreeSerif.ttf");
 }
 /* END FONTS */
 
@@ -245,7 +245,7 @@ h1 {
 }
 
 .card-image {
-  position: absolute;
+  position:absolute;
   inset: 0;
   justify-self: stretch;
   width: 100%;
