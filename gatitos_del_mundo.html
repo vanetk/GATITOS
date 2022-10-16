@@ -91,6 +91,18 @@
     <!-- END MENU -->
 
   </div>
+
+  <select onchange="showBreedImage(value)" name="breed_selector" id="breed_selector"></select>
+  
+  <div>
+    <a id="wiki_link" target="_blank"></a>
+    <div id="breed_json"></div>
+  </div>
+  
+  <div>
+    <img id="breed_image"></img>
+  </div>
+
   <!-- END HEADER -->
 
     <!-- CONTENT -->
@@ -105,6 +117,7 @@
 
     <!-- CARGA JS -->
     <script src="js/javascript.js"></script>
+    <script src="js/API.js"></script>
     <!-- END CARGA JS -->
   </body>
 </html>
