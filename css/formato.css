@@ -372,3 +372,55 @@ h1 {
     background-color: #ffffbf;
     min-width: 250px
   }
+
+/* formato para la pagina kittens */
+  .home_kittens {
+    display: flex;
+    background-color: #ffffbf;
+    flex-wrap: wrap;
+  }
+
+  .home_kittens_flex {
+    flex: 1;
+    min-width: 250px;
+    max-width: 650px;
+
+
+  }
+
+  .home_kittens_flex:first-child {
+    flex: 2;
+    padding: 25px;
+    margin: 20px;
+    background-color: #ffe8a8;
+    border-radius: 2%;
+    margin-bottom: 10px;
+    
+    
+  }
+
+  .home_kittens_flex div {
+    padding: 25px;
+    margin: 20px;
+    background-color: #ffe8a8;
+    border-radius: 2%;
+    
+
+  }
+
+#img_kittens_container {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+
+  .img_kittens {
+    border-radius: 40%;
+    background-color: #ff2f82;
+    max-width: 50%;
+    margin: 1px;
+
+
+  }
+
+    /* fin formato pagina kittnes */
