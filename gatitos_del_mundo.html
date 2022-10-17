@@ -42,7 +42,7 @@
         id="explota"
         src="img/imagenes_GATITO_ASTRONAUTA.jpg"
         alt="LOGO"
-        width="40%"
+        width="200"
       />
     </div>
     <!-- END LOGO -->
@@ -98,26 +98,25 @@
     <!-- CONTENT -->
 
     <!-- API -->
-<section class="api_conteiner">
-  <div class="api_datos_flex">
-      <div class="content_select">
-        <select onchange="showBreedImage(value)" name="breed_selector" id="breed_selector"></select>
+    <section class="api_conteiner">
+      <div class="api_datos_flex">
+          <div class="content_select">
+            <select onchange="showBreedImage(value)" name="breed_selector" id="breed_selector"></select>
+          </div>
+          <br>
+          <div>
+            <p>Conocé más sobre ellos en: <a id="wiki_link" target="_blank"></a></p>
+            <div id="breed_json"></div>
+          </div>
       </div>
-  
-      <div>
-        <a id="wiki_link" target="_blank"></a>
-        <div id="breed_json"></div>
+      
+      
+      <div class="api_datos_flex">
+        <img id="breed_image"></img>
       </div>
-  </div>
-  
-  
-  <div class="api_datos_flex">
-    <img id="breed_image"></img>
-  </div>
 
-</section>
+    </section>
     
-
     <!-- END API-->
 
     <!-- END CONTENT -->
