@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "Bree-Serif";
+    src: url("../fonts/FONT_BreeSerif.ttf");
+  }
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.menu-conteiner{
+    background-color: #ff00a4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+.menu-conteiner .nav-links{
+    list-style: none;
+}
+
+.menu-conteiner .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.menu-conteiner .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.menu-conteiner .nav-links a{
+    font-size: 700;
+    color: #ffe8a8;
+    text-decoration: none;
+}
+
+.menu-conteiner .nav-links li a:hover{
+    color: #ff9a87;
+}
+
+.menu-conteiner .boton button{
+    font-weight: 700;
+    color: #ff9a87;
+    padding: 9px 25px;
+    background-color: #ffffbf;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.menu-conteiner .boton button:hover{
+    background-color: #ffffbf;
+    color: #ff00a4;
+    transform: scale(1.1);
+}

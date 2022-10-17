@@ -5,8 +5,8 @@
 }
 
 @font-face {
-  font-family: "CathelineRegular";
-  src: url("../fonts/FONT_CathelineRegular.ttf");
+  font-family: "Quicksand";
+  src: url("../fonts/FONT_Quicksand.ttf");
 }
 
 @font-face {
@@ -106,13 +106,13 @@ time,
 mark,
 audio,
 video {
-  font-family: CathelineRegular;
+  font-family: Quicksand;
   vertical-align: baseline;
 }
 
 h1 {
   font-size: revert;
-  font-family: KawaiiBubble-Regular;
+  font-family: Bree-Serif;
   vertical-align: baseline;
 }
 
