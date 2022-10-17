@@ -42,14 +42,14 @@
         id="explota"
         src="img/imagenes_GATITO_ASTRONAUTA.jpg"
         alt="LOGO"
-        width="200"
+        width="40%"
       />
     </div>
     <!-- END LOGO -->
 
 
     <div class="titulo">
-      <h1>PAGINA DE GATITOS!</h1>
+      <h1>GATITOS DEL MUNDO!</h1>
     </div>
 
     <!-- MENU -->
@@ -98,19 +98,25 @@
     <!-- CONTENT -->
 
     <!-- API -->
-
-    <div class="content_select">
-      <select onchange="showBreedImage(value)" name="breed_selector" id="breed_selector"></select>
-    </div>
+<section class="api_conteiner">
+  <div class="api_datos_flex">
+      <div class="content_select">
+        <select onchange="showBreedImage(value)" name="breed_selector" id="breed_selector"></select>
+      </div>
   
-    <div>
-      <a id="wiki_link" target="_blank"></a>
-      <div id="breed_json"></div>
-    </div>
+      <div>
+        <a id="wiki_link" target="_blank"></a>
+        <div id="breed_json"></div>
+      </div>
+  </div>
+  
+  
+  <div class="api_datos_flex">
+    <img id="breed_image"></img>
+  </div>
+
+</section>
     
-    <div>
-      <img id="breed_image"></img>
-    </div>
 
     <!-- END API-->
 
