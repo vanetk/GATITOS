@@ -94,11 +94,13 @@ body{
     padding: 0 15px;
     cursor: pointer;
     display: none;
+    z-index: 7;
 }
 
 .menu__img{
     display: block;
     width: 36px; 
+    z-index: 7;
 }
 
 /* MENU RESPONSIVE: CORTE 800 PX*/
@@ -170,40 +172,3 @@ body{
 }
 /* END MENU */
 
-/*Api*/
-.content-select{
-	max-width: 250px;
-	position: relative;
-}
- 
-#breed_selector{ /*okey esta parte es la del selector de gatitos :D*/
-    display: inline-block;
-	width: 20%;
-	cursor: pointer;
-  	padding: 7px 10px;
-  	height: 42px;
-  	outline: 0; 
-  	border: 0;
-	border-radius: 0;
-	background:;
-	color:;
-	font-size: 1em;
-	font-family: 
-	border:2px solid rgba(0,0,0,0.2);
-    border-radius: 12px;
-    position: relative;
-    transition: all 0.25s ease;
-}
-#breed_selector:hover{
-    background-color: #ff9a87;
-}
-
-#wiki_link{
-    background-color: #ff2f82; /*este es el link*/
-}
-#breed_json{
-    color: #ff9a87; /*esta es la descripción*/
-}
-#breed_image{
-    width: 50%; /*esta es la imagen*/
-}

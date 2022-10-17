@@ -20,6 +20,12 @@
 }
 /* END FONTS */
 
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 /* TODAS LAS OPCIONES DE ATRIBUTOS (MENOS LOS TITULOS) VAN A TENER LA MISMA LETRA */
 html,
 body,
@@ -100,9 +106,6 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
   font-family: CathelineRegular;
   vertical-align: baseline;
 }
@@ -169,6 +172,7 @@ h1 {
   border-radius: 50%;
   /* explicacion de animacion: https://linuxhint.com/rotate-animation-css/ */
   animation: 60s linear 0s infinite alternate rotation;
+  max-width: 600px;
 }
 @keyframes rotation {
   from {
@@ -227,71 +231,70 @@ h1 {
   grid-row: 2;
 }
 /*negros*/
-#grid_5{
+#grid_5 {
   grid-column: 3;
   grid-row: 3/6;
 }
 /*persa*/
-#grid_6{
+#grid_6 {
   grid-column: 1;
   grid-row: 4/7;
 }
 /*kohana*/
-#grid_7{
+#grid_7 {
   grid-column: 2;
   grid-row: 5/9;
 }
 /*lykoi*/
-#grid_8{
+#grid_8 {
   grid-column: 3;
   grid-row: 6/8;
 }
 /*himalayo*/
-#grid_9{
+#grid_9 {
   grid-column: 1;
   grid-row: 7;
 }
 /*ceylon*/
-#grid_10{
+#grid_10 {
   grid-column: 1;
   grid-row: 8/10;
 }
 /*siames*/
-#grid_11{
+#grid_11 {
   grid-column: 3;
   grid-row: 8/10;
 }
 /*turco*/
-#grid_12{
+#grid_12 {
   grid-column: 2;
   grid-row: 9/11;
 }
 /*ashera*/
-#grid_13{
+#grid_13 {
   grid-column: 1;
   grid-row: 10/14;
 }
 /*caracat*/
-#grid_14{
+#grid_14 {
   grid-column: 2;
   grid-row: 12/14;
 }
 /*burmilla*/
-#grid_15{
+#grid_15 {
   grid-column: 3;
   grid-row: 10/12;
 }
 /*montes*/
-#grid_16{
+#grid_16 {
   grid-column: 2;
   grid-row: 11;
 }
 /*bengala*/
-#grid_17{
+#grid_17 {
   grid-column: 3;
   grid-row: 12/14;
 }
-
 
 /* pintado alternado: https://developer.mozilla.org/es/docs/Web/CSS/:nth-child */
 .contenido div:nth-child(even) {
@@ -313,7 +316,7 @@ h1 {
 }
 
 .card-image {
-  position:absolute;
+  position: absolute;
   inset: 0;
   justify-self: stretch;
   width: 100%;
@@ -334,93 +337,195 @@ h1 {
   bottom: 15px;
   font-size: 20px;
   text-shadow: o o 1px rgba(0, 0, 0, 0.5);
-  color: black
-
+  color: black;
 }
 /* END CARDS */
 
 .footer {
-    background-image: url(../imagenes_PATITAS200PX.jpeg);
-    width: 100%;
-    height: 100px;
-    background-repeat: repeat-x;
-  
+  background-image: url(../imagenes_PATITAS200PX.jpeg);
+  width: 100%;
+  height: 100px;
+  background-repeat: repeat-x;
 }
 
 .tarjetas_quienes_somos {
-    /* formato para la pagina de quienes somos */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: stretch;
-    margin: 0px;
-    padding: 0PX;
-    background-color: #ffffbf;
-    justify-items: center;
-    align-content: stretch;
-    
-    
-  }
-  .tarjetas_quienes_somos div {
-    flex: 2;
-    padding: 25px;
-    margin: 20px;
-    justify-content: space-evenly;
-    align-items: center;
-    justify-items: center;
-    align-content: stretch;
-    background-color: #ffffbf;
-    min-width: 250px
-  }
-
-/* formato para la pagina kittens */
-  .home_kittens {
-    display: flex;
-    background-color: #ffffbf;
-    flex-wrap: wrap;
-  }
-
-  .home_kittens_flex {
-    flex: 1;
-    min-width: 250px;
-    max-width: 650px;
-
-
-  }
-
-  .home_kittens_flex:first-child {
-    flex: 2;
-    padding: 25px;
-    margin: 20px;
-    background-color: #ffe8a8;
-    border-radius: 2%;
-    margin-bottom: 10px;
-    
-    
-  }
-
-  .home_kittens_flex div {
-    padding: 25px;
-    margin: 20px;
-    background-color: #ffe8a8;
-    border-radius: 2%;
-    
-
-  }
-
-#img_kittens_container {
-    display: flex;
-    margin: 0px;
-    padding: 0px;
+  /* formato para la pagina de quienes somos */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+  margin: 0px;
+  padding: 0px;
+  background-color: #ffffbf;
+  justify-items: center;
+  align-content: stretch;
+}
+.tarjetas_quienes_somos div {
+  flex: 2;
+  padding: 25px;
+  margin: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  justify-items: center;
+  align-content: stretch;
+  background-color: #ffffbf;
+  min-width: 250px;
 }
 
-  .img_kittens {
-    border-radius: 40%;
-    background-color: #ff2f82;
-    max-width: 50%;
-    margin: 1px;
+/* formato para la pagina kittens */
+.home_kittens {
+  display: flex;
+  background-color: #ffffbf;
+  flex-wrap: wrap;
+}
 
+.home_kittens_flex {
+  flex: 1;
+  min-width: 250px;
+  max-width: 650px;
+}
 
-  }
+.home_kittens_flex:first-child {
+  flex: 2;
+  padding: 25px;
+  margin: 20px;
+  background-color: #ffe8a8;
+  border-radius: 2%;
+  margin-bottom: 10px;
+}
 
-    /* fin formato pagina kittnes */
+.home_kittens_flex div {
+  padding: 25px;
+  margin: 20px;
+  background-color: #ffe8a8;
+  border-radius: 2%;
+}
+
+#img_kittens_container {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+
+.img_kittens {
+  border-radius: 40%;
+  background-color: #ff2f82;
+  max-width: 50%;
+  margin: 1px;
+}
+
+/* fin formato pagina kittnes */
+
+/* formato para la api - gatitos del mundo */
+.api_conteiner {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffbf;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/* .api_datos_flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  min-width: 250px;
+  max-width: 650px;
+  padding: 25px;
+  margin: 20px;
+  background-color: #ffe8a8;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  color: black;
+  width: 100%;
+  min-width: 250px;
+  max-width: 650px;
+  border-radius: 12px;
+} */
+
+/* .api_datos_flex:first-child {
+  flex: 2;
+  padding: 25px;
+  margin: 20px;
+  background-color: #ffe8a8;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  color: black;
+  width: 100%;
+  min-width: 250px;
+  max-width: 650px;
+  border-radius: 12px;
+} */
+
+/* .api_datos_flex div {
+  padding: 25px;
+  margin: 20px;
+  background-color: #ffe8a8;
+  background-color: #ff9a87;
+  color: black;
+  width: 100%;
+  min-width: 250px;
+  max-width: 650px;
+  border-radius: 12px;
+} */
+
+.content-select {
+  min-width: 250px;
+  max-width: 650px;
+  position: relative;
+}
+
+/*okey esta parte es la del selector de gatitos :D*/
+ #breed_selector {
+  display: inline-block;
+  min-width: 250px;
+  max-width: 650px;
+  cursor: pointer;
+  padding: 7px 10px;
+  height: 42px;
+  outline: 0;
+  border: 0;
+
+  background: #ff2f82;
+  color: aliceblue;
+  font-size: 1em;
+  border: 2px;
+  border-radius: 12px;
+  position: relative;
+  transition: all 0.25s ease;
+} 
+ #breed_selector:hover {
+  background-color: #ff9a87;
+} 
+
+/*este es el link*/
+ #wiki_link {
+  background-color: #ff9a87;
+  color: black;
+  width: 100%;
+  min-width: 250px;
+  max-width: 650px;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 12px;
+} 
+
+/*esta es la descripción*/
+ #breed_json {
+  background-color: #ff9a87;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 12px;
+  
+} 
+
+#breed_image {
+  width: 100%; /*esta es la imagen*/
+  max-width: 500px;
+  margin: 20px;
+  border-radius: 12px;
+}
+
+/* fin formato api - gatitos del mundo */
