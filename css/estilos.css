@@ -1,8 +1,115 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 
+/* FONTS */
+    @font-face {
+        font-family: "PrettyMeowRegular";
+        src: url("../fonts/FONT_PrettyMeowRegular.ttf");
+    }
+    
+    @font-face {
+        font-family: "Quicksand";
+        src: url("../fonts/FONT_Quicksand.ttf");
+    }
+    
+    @font-face {
+        font-family: "KawaiiBubble-Regular";
+        src: url("../fonts/FONT_KawaiiBubble-Regular.ttf");
+    }
+    
+    @font-face {
+        font-family: "Bree-Serif";
+        src: url("../fonts/FONT_BreeSerif.ttf");
+    }
+/* END FONTS */
+
+/* TODAS LAS OPCIONES DE ATRIBUTOS (MENOS LOS TITULOS) VAN A TENER LA MISMA LETRA */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  font-family: Quicksand;
+  vertical-align: baseline;
+}
+
 *{
     margin: 0;
     padding: 0;
+    border: 0;
     box-sizing: border-box;
 }
 
@@ -10,165 +117,462 @@ body{
     font-family: 'Bree Serif', serif;
 }
 
-/* MENU */
-.menu{
-    background-color: #ff2f82;
-    color: #fff;
-    height: 70px;
-}
+h1 {
+    font-size: revert;
+    font-family: Bree-Serif;
+    vertical-align: baseline;
+  }
 
-.menu__container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
-    height: 100%;
-    margin: 0 auto;
-}
-
-.menu__links{
-    height: 100%;
-    transition: transform .5s;
-    display: flex;
-}
-
-.menu__item{
-    list-style: none;
-    position: relative;
-    height: 100%;
-    --clip: polygon(0 0, 100% 0%, 100% 0, 0 0);
-    --transform: rotate(-90deg);
-}
-
-.menu__item:hover{
-    --clip: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
-    --transform: rotate(0);
-}
-
-.menu__link{
-    color: #fff;
-    text-decoration: none;
-    padding: 0 30px;
-    display: flex;
-    height: 100%;
-    align-items: center;
-}
-
-.menu__link:hover{
-    background-color: #ff9a87;
-}
-
-.menu_arrow{
-    transform: var(--transform);
-    transition: transform .3s;
-    display: block;
-    margin-left: 3px;
-
-}
-
-.menu__nesting{
-    list-style: none;
-    transition:clip-path .3s;
-    clip-path: var(--clip);
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: max-content;
-    transform: translateY(100%);
-    background-color: #ff00a4;
-}
-
-.menu__link--inside{
-    padding: 30px 100px 30px 20px;
-}
-
-.menu__link--inside:hover{
-    background-color: #ff9a87;
-}
-
-.menu__hamburguer{
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 0 15px;
-    cursor: pointer;
-    display: none;
-    z-index: 7;
-}
-
-.menu__img{
-    display: block;
-    width: 36px; 
-    z-index: 7;
-}
-
-/* MENU RESPONSIVE: CORTE 800 PX*/
-
-@media (max-width:800px){
-    .menu__hamburguer{
+/*HEADER*/
+    .header {
         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    
+        /* HEADER ANIMATION scr: https://developer.mozilla.org/en-US/docs/Web/CSS/animation */
+        background-color: #ff9a87;
+        animation: 60s linear 0s infinite alternate animating-multiple-properties;
+        margin: 0%;
+        padding: 1rem;
+        /* END HEADER ANIMATION */
     }
-
-    .menu__item{
-        --clip:0;
-        overflow: hidden;
-    }
-
-    .menu__item--active{
-        --transform: rotate(0);
-        --background: #ff9a87;
-    }
-
-    .menu__item--show{
-        background-color: var(--background);
-    }
-
-    .menu__links{
-        position: fixed;
-        max-width: 400px;
-        width: 100%;
-        top: 70px;
-        bottom: 0;
-        right: 0;
-        background-color: #ff00a4;
-        overflow-y: auto;
-        display: grid;
-        grid-auto-rows: max-content;
-        transform: translateX(100%);
-    }
-
-    .menu__links--show{
-        transform: unset;
-        width: 100%;
-    }
-
-    .menu__link{
-        padding: 25px 0;
-        padding-left: 30px;
-        height: auto;
-    }
-
-    .menu_arrow{
-        margin-left: auto;
-        margin-right: 20px;
-    }
-
-    .menu__nesting{
-        display: grid;
-        position: unset;
-        width: 100%;
+    
+    /* Key HEADER */
+    /* it is possible to animate multiple properties in a single animation */
+    @keyframes animating-multiple-properties {
+        from {
+        background-color: #ffffbf;
+        }
+        to {
         transform: translateY(0);
-        height: 0;
-        transition: height .3s;
+        background-color: #ff9a87;
+        /* unset properties i.e. 'filter' will revert to default values */
+        }
+    }
+    /* END Key HEADER */
+/*END HEADER*/
+
+/* LOGO ANIMATION */
+    .logo_gatito {
+        border-radius: 50%;
+        /* explicacion de animacion: https://linuxhint.com/rotate-animation-css/ */
+        animation: 60s linear 0s infinite alternate rotation;
+        max-width: 600px;
+    }
+    @keyframes rotation {
+        from {
+        transform: rotate(-90deg);
+        }
+        to {
+        transform: rotate(90deg);
+        }
+    }
+/* END LOGO ANIMATION*/
+
+/* MENU */
+    .menu-conteiner{
+        background-color: #ff00a4;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 85px;
+        padding: 5px 10%;
+        font-family: "Bree-Serif";
+        font-size: 20px;
     }
 
-    .menu__link--inside{
-        width: 90%;
-        margin-left: auto;
-        border-left: 1px solid #ff9a87;
+    .menu-conteiner .nav-links{
+        list-style: none;
     }
-    /* END MENU RESPONSIVE*/
-}
+
+    .menu-conteiner .nav-links li{
+        display: inline-block;
+        padding: 0 20px;
+    }
+
+    .menu-conteiner .nav-links li:hover{
+        transform: scale(1.1);
+    }
+
+    .menu-conteiner .nav-links a{
+        font-size: 700;
+        color: #ffe8a8;
+        text-decoration: none;
+    }
+
+    .menu-conteiner .nav-links li a:hover{
+        color: #ff9a87;
+    }
+
+    .menu-conteiner .boton button{
+        font-weight: 700;
+        font-size: 20px;
+        color: #ff9a87;
+        padding: 9px 25px;
+        background-color: #ffffbf;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+
+    .menu-conteiner .boton button:hover{
+        background-color: #ffffbf;
+        color: #ff00a4;
+        transform: scale(1.1);
+    }
 /* END MENU */
 
+/* HOME CONTENT */
+    .contenido {
+        /* explicacion de grid: https://developer.mozilla.org/es/docs/Web/CSS/CSS_Grid_Layout */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5px;
+        grid-auto-rows: minmax(100px, auto);
+        justify-content: space-evenly;
+        align-items: stretch;
+        margin: 0px;
+        padding: 0rem;
+        background-color: #ffffbf;
+        justify-items: stretch;
+        align-content: stretch;
+    }
+    .contenido div {
+        display: grid;
+        width: -webkit-fill-available;
+        padding: 0rem;
+        margin: 0rem;
+        justify-content: space-evenly;
+        align-items: center;
+        justify-items: stretch;
+        align-content: stretch;
+        border-radius: 1%;
+    }
+    /*titulo*/
+    #grid_1 {
+        grid-column: 1 / 4;
+        grid-row: 1;
+    }
+    /*a rayas*/
+    #grid_2 {
+        grid-column: 1;
+        grid-row: 2/4;
+    }
+    /*naranjitas*/
+    #grid_3 {
+        grid-column: 2;
+        grid-row: 2/5;
+    }
+    /*grises*/
+    #grid_4 {
+        grid-column: 3;
+        grid-row: 2;
+    }
+    /*negros*/
+    #grid_5 {
+        grid-column: 3;
+        grid-row: 3/6;
+    }
+    /*persa*/
+    #grid_6 {
+        grid-column: 1;
+        grid-row: 4/7;
+    }
+    /*kohana*/
+    #grid_7 {
+        grid-column: 2;
+        grid-row: 5/9;
+    }
+    /*lykoi*/
+    #grid_8 {
+        grid-column: 3;
+        grid-row: 6/8;
+    }
+    /*himalayo*/
+    #grid_9 {
+        grid-column: 1;
+        grid-row: 7;
+    }
+    /*ceylon*/
+    #grid_10 {
+        grid-column: 1;
+        grid-row: 8/10;
+    }
+    /*siames*/
+    #grid_11 {
+        grid-column: 3;
+        grid-row: 8/10;
+    }
+    /*turco*/
+    #grid_12 {
+        grid-column: 2;
+        grid-row: 9/11;
+    }
+    /*ashera*/
+    #grid_13 {
+        grid-column: 1;
+        grid-row: 10/14;
+    }
+    /*caracat*/
+    #grid_14 {
+        grid-column: 2;
+        grid-row: 12/14;
+    }
+    /*burmilla*/
+    #grid_15 {
+        grid-column: 3;
+        grid-row: 10/12;
+    }
+    /*montes*/
+    #grid_16 {
+        grid-column: 2;
+        grid-row: 11;
+    }
+    /*bengala*/
+    #grid_17 {
+        grid-column: 3;
+        grid-row: 12/14;
+    }
+    
+    /* pintado alternado: https://developer.mozilla.org/es/docs/Web/CSS/:nth-child */
+    .contenido div:nth-child(even) {
+        background-color: #ffe8a8;
+    }
+    
+    .contenido div:nth-child(odd) {
+        background-color: #ff9a87;
+    }
+
+    /* CARDS */
+        .card {
+            outline: 1px solid rgba(255, 255, 255, 0.5);
+            outline-offset: -8px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card-image {
+            position: absolute;
+            inset: 0;
+            justify-self: stretch;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.7;
+            transition: transform 0.75s;
+        }
+        
+        .card:hover .card-image {
+            transform: scale(1.15);
+            opacity: 0.9;
+        }
+        
+        .card-title {
+            position: absolute;
+            left: 15px;
+            bottom: 15px;
+            font-size: 20px;
+            text-shadow: o o 1px rgba(0, 0, 0, 0.5);
+            color: black;
+        }
+    /* END CARDS */
+
+/* END HOME CONTENT */
+
+/*ABOUT CONTENT*/
+    .tarjetas_quienes_somos {
+        /* formato para la pagina de quienes somos */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: stretch;
+        margin: 0px;
+        padding: 0px;
+        background-color: #ffffbf;
+        justify-items: center;
+        align-content: stretch;
+    }
+    .tarjetas_quienes_somos div {
+        flex: 2;
+        padding: 25px;
+        margin: 20px;
+        justify-content: space-evenly;
+        align-items: center;
+        justify-items: center;
+        align-content: stretch;
+        background-color: #ffffbf;
+        min-width: 250px;
+    }
+/*END ABOUT CONTENT*/
+
+/*KITTENS CONTENT*/
+    .home_kittens {
+        display: flex;
+        background-color: #ffffbf;
+        flex-wrap: wrap;
+    }
+    
+    .home_kittens_flex {
+        flex: 1;
+        min-width: 250px;
+        max-width: 650px;
+    }
+    
+    .home_kittens_flex:first-child {
+        flex: 2;
+        padding: 25px;
+        margin: 20px;
+        background-color: #ffe8a8;
+        border-radius: 2%;
+        margin-bottom: 10px;
+    }
+    
+    .home_kittens_flex div {
+        padding: 25px;
+        margin: 20px;
+        background-color: #ffe8a8;
+        border-radius: 2%;
+    }
+    
+    #img_kittens_container {
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .img_kittens {
+        border-radius: 40%;
+        background-color: #ff2f82;
+        max-width: 50%;
+        margin: 1px;
+    }  
+/*END KITTENS CONTENT*/
+
+/*GATITOS DEL MUNDO/API CONTENT*/
+    .api_conteiner {
+        display: flex;
+        flex-direction: row;
+        background-color: #ffffbf;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    /* .api_datos_flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        min-width: 250px;
+        max-width: 650px;
+        padding: 25px;
+        margin: 20px;
+        background-color: #ffe8a8;
+        border-radius: 12px;
+        margin-bottom: 10px;
+        color: black;
+        width: 100%;
+        min-width: 250px;
+        max-width: 650px;
+        border-radius: 12px;
+    } */
+    
+    /* .api_datos_flex:first-child {
+        flex: 2;
+        padding: 25px;
+        margin: 20px;
+        background-color: #ffe8a8;
+        border-radius: 12px;
+        margin-bottom: 10px;
+        color: black;
+        width: 100%;
+        min-width: 250px;
+        max-width: 650px;
+        border-radius: 12px;
+    } */
+    
+    /* .api_datos_flex div {
+        padding: 25px;
+        margin: 20px;
+        background-color: #ffe8a8;
+        background-color: #ff9a87;
+        color: black;
+        width: 100%;
+        min-width: 250px;
+        max-width: 650px;
+        border-radius: 12px;
+    } */
+    
+    .content-select {
+        min-width: 250px;
+        max-width: 650px;
+        position: absolute;
+    }
+    
+    /*okey esta parte es la del selector de gatitos :D*/
+    #breed_selector {
+        width: 90%;
+        display: inline-block;
+        min-width: 250px;
+        max-width: 650px;
+        cursor: pointer;
+        padding: 7px 10px;
+        height: 42px;
+        outline: 0;
+        border: 0;
+        margin-top: 20px;
+    
+        background: #ff2f82;
+        color: aliceblue;
+        font-size: 1em;
+        border: 2px;
+        border-radius: 12px;
+        position: relative;
+        transition: all 0.25s ease;
+    } 
+    #breed_selector:hover {
+        background-color: #ff9a87;
+    } 
+    #breed_selector option{
+        background-color:#ffe8a8;
+        color:black;
+    }
+    
+    /*este es el link*/
+    #wiki_link {
+        background-color:rgba(255, 154, 135, 0.2);
+        color: black;
+        min-width: 250px;
+        max-width: 650px;
+        margin: 50px;
+        padding: 20px;
+        border-radius: 12px;
+    } 
+    
+    /*esta es la descripción*/
+    #breed_json {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px;
+        padding: 20px;
+        border-radius: 12px;
+        
+    } 
+    
+    #breed_image {
+        width: 100%; /*esta es la imagen*/
+        max-width: 500px;
+        margin: 20px;
+        border-radius: 12px;
+    }  
+/* END GATITOS/API CONTENT*/
+
+/*FOOTER*/
+    .footer {
+        background-image: url(../img/imagenes_PATITAS200PX.jpeg);
+        width: 100%;
+        height: 100px;
+        background-repeat: repeat-x;
+    }
+/*END FOOTER*/
