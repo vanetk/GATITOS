@@ -579,6 +579,7 @@ h1 {
         background-color: #ff9a87;
         border-color: #ff9a87;
         color: #000;
+        font-family: "Bree-Serif";
         transition: all 0.3s ease 0s;
     }
     .footer .btn:hover{

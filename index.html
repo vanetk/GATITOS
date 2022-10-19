@@ -14,10 +14,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- SCRIPT LOGO (pum) -->
-    <script src="js/confetti.min.js"></script>
-    <!-- END SCRIPT LOGO -->
-
     <!-- FAVICON -->
     <link
       rel="apple-touch-icon"
@@ -27,11 +23,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png" />
     <link rel="manifest" href="icons/favicon-site.webmanifest" />
-    <!-- END FAVICON -->
-    
-    <!-- CARGA JS -->
-    <script src="js/javascript.js"></script>
-    <!-- END CARGA JS -->   
+    <!-- END FAVICON -->  
 
     <title>Pagina de gatitos</title>
 
@@ -230,11 +222,11 @@
           <h2>Gatitos</h2>
         </div>
         <div class="mb-2">
-          <form action="">
+          <form action="" class="row g-3 needs-validation" novalidate>
             <div class="mb-2">
-              <label for="signo">Tu signo</label>
-              <select class="form-select" aria-label="">
-                <option selected>Elegí tu signo!</option>
+              <label for="signo" class="form-label">Tu signo</label>
+              <select class="form-select" required>
+                <option selected disabled value="">Elegí tu signo!</option>
                 <option value="ari">Aries</option>
                 <option value="tau">Tauro</option>
                 <option value="gem">Géminis</option>
@@ -248,10 +240,32 @@
                 <option value="acu">Acuario</option>
                 <option value="pis">Piscis</option>
               </select>
+              <div class="valid-feedback">
+                Purr!
+              </div>
+              <div class="invalid-feedback">
+                MIAU! Ingresa tu signo!
+              </div>
             </div>
             <div class="mb-2">
-              <label for="mail">Tu correo</label>
-              <input type="email" name="" id="" placeholder="amolosgatitos@gmail.com" class="form-control">
+              <label for="mail" class="form-label">Tu correo</label>
+              <input type="email" name="" id="" placeholder="amolosgatitos@gmail.com" class="form-control" required>
+              <div class="valid-feedback">
+                Purr!
+              </div>
+              <div class="invalid-feedback">
+                MIAU! Ingresa tu correo!
+              </div>
+            </div>
+            <div class="mb-2 form-check">
+              <input type="checkbox" class="form-check-input" id="terms" required>
+              <label for="terms" class="form-check-label">Acepto recibir mi gatito por email!</label>
+              <div class="valid-feedback">
+                Purr!
+              </div>
+              <div class="invalid-feedback">
+                MIAU! Aceptalo para recibirme!
+              </div>
             </div>
             <div class="mb-2 p-2">
               <button class="btn btn-primary">Conocer mi gatito!</button>
@@ -262,6 +276,13 @@
      </section>
     </footer>
     <!-- END FOOTER -->
-
+   
+    <!-- CARGA JS -->
+          <!-- SCRIPT LOGO (pum) -->
+          <script src="js/confetti.min.js"></script>
+          <!-- END SCRIPT LOGO -->
+    <script src="js/javascript.js"></script>
+    <script src="js/validation-form.js"></script>
+    <!-- END CARGA JS --> 
   </body>
 </html>
