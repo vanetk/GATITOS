@@ -116,6 +116,9 @@ video {
 body{
     font-family: 'Bree Serif', serif;
 }
+body::-webkit-scrollbar {
+    display: none;
+}
 
 h1 {
     font-size: revert;
