@@ -230,8 +230,6 @@ h1 {
 /* HOME CONTENT */
     .contenido {
         /* explicacion de grid: https://developer.mozilla.org/es/docs/Web/CSS/CSS_Grid_Layout */
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
         grid-gap: 5px;
         grid-auto-rows: minmax(100px, auto);
         justify-content: space-evenly;
@@ -252,91 +250,6 @@ h1 {
         justify-items: stretch;
         align-content: stretch;
         border-radius: 1%;
-    }
-    /*titulo*/
-    #grid_1 {
-        grid-column: 1 / 4;
-        grid-row: 1;
-    }
-    /*a rayas*/
-    #grid_2 {
-        grid-column: 1;
-        grid-row: 2/4;
-    }
-    /*naranjitas*/
-    #grid_3 {
-        grid-column: 2;
-        grid-row: 2/5;
-    }
-    /*grises*/
-    #grid_4 {
-        grid-column: 3;
-        grid-row: 2;
-    }
-    /*negros*/
-    #grid_5 {
-        grid-column: 3;
-        grid-row: 3/6;
-    }
-    /*persa*/
-    #grid_6 {
-        grid-column: 1;
-        grid-row: 4/7;
-    }
-    /*kohana*/
-    #grid_7 {
-        grid-column: 2;
-        grid-row: 5/9;
-    }
-    /*lykoi*/
-    #grid_8 {
-        grid-column: 3;
-        grid-row: 6/8;
-    }
-    /*himalayo*/
-    #grid_9 {
-        grid-column: 1;
-        grid-row: 7;
-    }
-    /*ceylon*/
-    #grid_10 {
-        grid-column: 1;
-        grid-row: 8/10;
-    }
-    /*siames*/
-    #grid_11 {
-        grid-column: 3;
-        grid-row: 8/10;
-    }
-    /*turco*/
-    #grid_12 {
-        grid-column: 2;
-        grid-row: 9/11;
-    }
-    /*ashera*/
-    #grid_13 {
-        grid-column: 1;
-        grid-row: 10/14;
-    }
-    /*caracat*/
-    #grid_14 {
-        grid-column: 2;
-        grid-row: 12/14;
-    }
-    /*burmilla*/
-    #grid_15 {
-        grid-column: 3;
-        grid-row: 10/12;
-    }
-    /*montes*/
-    #grid_16 {
-        grid-column: 2;
-        grid-row: 11;
-    }
-    /*bengala*/
-    #grid_17 {
-        grid-column: 3;
-        grid-row: 12/14;
     }
     
     /* pintado alternado: https://developer.mozilla.org/es/docs/Web/CSS/:nth-child */
