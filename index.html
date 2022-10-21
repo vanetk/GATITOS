@@ -87,6 +87,19 @@
           <li><a href="quienes_somos.html">Nosotras</a></li>
         </ul>
       </nav>
+
+      <a onclick="openNav()" class="menu" href="#"><button>Menú</button></a>
+
+      <div class="overlay" id="mobile-menu">
+        <a onclick="closeNav()" href="#" class="close">&times;</a>
+        <div class="overlay-content">
+          <a href="index.html">Inicio</a>
+          <a href="kittens.html">Gatitos</a>
+          <a href="gatitos_del_mundo.html">Gatitos del Mundo</a>
+          <a href="curiosidades.html">Curiosidades</a>
+          <a href="quienes_somos.html">Nosotras</a>
+        </div>
+      </div>
     </div>
     <!-- END MENU -->
 
@@ -285,6 +298,7 @@
           <!-- END SCRIPT LOGO -->
     <script src="js/javascript.js"></script>
     <script src="js/validation-form.js"></script>
+    <script type="text/JavaScript" src="js/nav.js"></script>
     <!-- END CARGA JS --> 
   </body>
 </html>

@@ -29,6 +29,7 @@
 
     <!-- CARGA JS -->
     <script src="js/javascript.js"></script>
+    <script type="text/JavaScript" src="js/nav.js"></script>
     <!-- END CARGA JS -->    
 
     <title>Curiosidades</title>
@@ -61,13 +62,27 @@
   <!-- MENU -->
   <div class="menu-conteiner">
     <a href="#" class="boton"><button>Curiosidades</button></a>
-    <nav id="menu"></nav>
-    <ul class="nav-links">
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="kittens.html">Gatitos</a></li>
-      <li><a href="gatitos_del_mundo.html">Gatitos del Mundo</a></li>
-      <li><a href="quienes_somos.html">Nosotras</a></li>
-    </ul>
+    <nav id="menu">
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="kittens.html">Gatitos</a></li>
+        <li><a href="gatitos_del_mundo.html">Gatitos del Mundo</a></li>
+        <li><a href="quienes_somos.html">Nosotras</a></li>
+      </ul>
+    </nav>
+
+    <a onclick="openNav()" class="menu" href="#"><button>Menú</button></a>
+
+    <div class="overlay" id="mobile-menu">
+      <a onclick="closeNav()" href="#" class="close">&times;</a>
+        <div class="overlay-content">
+          <a href="index.html">Inicio</a>
+          <a href="kittens.html">Gatitos</a>
+          <a href="gatitos_del_mundo.html">Gatitos del Mundo</a>
+          <a href="curiosidades.html">Curiosidades</a>
+          <a href="quienes_somos.html">Nosotras</a>
+        </div>
+    </div>
   </div>
   <!-- END MENU -->
 

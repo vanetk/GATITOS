@@ -194,21 +194,22 @@ h1 {
         padding: 0 20px;
     }
 
-    .menu-conteiner .nav-links li:hover{
+    .menu-conteiner .nav-links li:hover,
+    .menu-conteiner .overlay a:hover{
         transform: scale(1.1);
     }
 
     .menu-conteiner .nav-links a{
         font-size: 700;
         color: #ffe8a8;
-        text-decoration: none;
     }
 
     .menu-conteiner .nav-links li a:hover{
         color: #ff9a87;
     }
 
-    .menu-conteiner .boton button{
+    .menu-conteiner .boton button,
+    .menu-conteiner .menu button{
         font-weight: 700;
         font-size: 20px;
         color: #ff9a87;
@@ -220,10 +221,56 @@ h1 {
         transition: all 0.3s ease 0s;
     }
 
-    .menu-conteiner .boton button:hover{
+    .menu-conteiner .boton button:hover,
+    .menu-conteiner .menu button:hover{
         background-color: #ffffbf;
         color: #ff00a4;
         transform: scale(1.1);
+    }
+
+    .menu-conteiner a{
+        text-decoration: none;
+    }
+
+    .menu-conteiner .overlay{
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        background-color: #ff00a4;
+        overflow: hidden;
+        transition: all 0.3s ease 0s;
+    }
+
+    .menu-conteiner .overlay .overlay-content{
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu-conteiner .overlay a{
+        padding: 15px;
+        font-size: 36px;
+        display: block;
+        transition: all 0.3s ease 0s;
+        font-weight: 700;
+        color: #ffffbf;
+    }
+
+    .menu-conteiner .overlay a:hover,
+    .menu-conteiner .overlay a:focus{
+        color: #ff9a87;
+    }
+
+    .menu-conteiner .overlay .close{
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 65px;
     }
 /* END MENU */
 

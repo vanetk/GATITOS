@@ -2,6 +2,24 @@
     .menu-conteiner .nav-links{
         display: none;
     }
+ 
+    .menu-conteiner .overlay a{
+        font-size: 20px;
+    }
+
+    .menu-conteiner .overlay .close{
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+
+    .menu-conteiner .boton{
+        display: none;
+    }
+
+    .menu-conteiner .menu{
+        display: inherit;
+    }
 /*KITTENS CONTENT*/
     .home_kittens {
         display:inline-block;
@@ -14,7 +32,7 @@
     }
     .home_kittens_flex iframe{
         height: 500px;
-    }
+    } */
 /*END KITTENS CONTENT*/
 
 /*HOME CONTENT*/
@@ -98,7 +116,24 @@
     .menu-conteiner .nav-links{
         display: none;
     }
-    
+
+    .menu-conteiner .overlay a{
+        font-size: 20px;
+    }
+
+    .menu-conteiner .overlay .close{
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+
+    .menu-conteiner .boton{
+        display: none;
+    }
+
+    .menu-conteiner .menu{
+        display: inherit;
+    }
     /*HOME CONTENT*/
         .contenido{
             display:grid;
@@ -197,6 +232,13 @@
         display: flex;
     }
 
+    .menu-conteiner .boton{
+        display: flex;
+    }
+
+    .menu-conteiner .menu{
+        display: none;
+    }
 /*KITTENS CONTENT*/
     .home_kittens {
         display: flex;
