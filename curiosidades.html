@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     <!-- CSS -->
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/mqs.css">
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/mqs.css" />
     <!-- END CSS -->
 
     <meta charset="UTF-8" />
@@ -22,59 +21,66 @@
       sizes="180x180"
       href="icons/favicon-apple-touch-icon.png"
     />
-    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icons/favicon-16x16.png"
+    />
     <link rel="manifest" href="icons/favicon-site.webmanifest" />
     <!-- END FAVICON -->
 
     <!-- CARGA JS -->
     <script src="js/javascript.js"></script>
     <script type="text/JavaScript" src="js/nav.js"></script>
-    <!-- END CARGA JS -->    
+    <!-- END CARGA JS -->
 
     <title>Curiosidades</title>
-</head>
+  </head>
 
-<body class="toda_la_pagina">
+  <body class="toda_la_pagina">
+    <!-- HEADER -->
+    <div class="header">
+      <!-- LOGO scr:https://www.freepik.com/vectors/cat-logo -->
+      <div class="logo">
+        <img
+          class="logo_gatito"
+          id="explota"
+          src="img/imagenes_GATITO_ASTRONAUTA.jpg"
+          alt="LOGO"
+          width="200"
+        />
+      </div>
+      <!-- END LOGO -->
 
-  <!-- HEADER -->
-  <div class="header">
-
-    <!-- LOGO scr:https://www.freepik.com/vectors/cat-logo -->
-    <div class="logo">
-      <img
-        class="logo_gatito"
-        id="explota"
-        src="img/imagenes_GATITO_ASTRONAUTA.jpg"
-        alt="LOGO"
-        width="200"
-      />
+      <div class="titulo">
+        <h1>Curiosidades!</h1>
+      </div>
     </div>
-    <!-- END LOGO -->
+    <!-- END HEADER -->
 
-    <div class="titulo">
-      <h1>Curiosidades!</h1>
-    </div>
+    <!-- MENU -->
+    <div class="menu-conteiner">
+      <a href="#" class="boton"><button>Curiosidades</button></a>
+      <nav id="menu">
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="kittens.html">Gatitos</a></li>
+          <li><a href="gatitos_del_mundo.html">Gatitos del Mundo</a></li>
+          <li><a href="quienes_somos.html">Nosotras</a></li>
+        </ul>
+      </nav>
 
-  </div>
-  <!-- END HEADER -->
+      <a onclick="openNav()" class="menu" href="#"><button>Menú</button></a>
 
-  <!-- MENU -->
-  <div class="menu-conteiner">
-    <a href="#" class="boton"><button>Curiosidades</button></a>
-    <nav id="menu">
-      <ul class="nav-links">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="kittens.html">Gatitos</a></li>
-        <li><a href="gatitos_del_mundo.html">Gatitos del Mundo</a></li>
-        <li><a href="quienes_somos.html">Nosotras</a></li>
-      </ul>
-    </nav>
-
-    <a onclick="openNav()" class="menu" href="#"><button>Menú</button></a>
-
-    <div class="overlay" id="mobile-menu">
-      <a onclick="closeNav()" href="#" class="close">&times;</a>
+      <div class="overlay" id="mobile-menu">
+        <a onclick="closeNav()" href="#" class="close">&times;</a>
         <div class="overlay-content">
           <a href="index.html">Inicio</a>
           <a href="kittens.html">Gatitos</a>
@@ -82,19 +88,56 @@
           <a href="curiosidades.html">Curiosidades</a>
           <a href="quienes_somos.html">Nosotras</a>
         </div>
+      </div>
     </div>
-  </div>
-  <!-- END MENU -->
+    <!-- END MENU -->
 
-  <!-- CONTENT -->
-  <!-- END CONTENT -->
+    <!-- CONTENT -->
+    <div class="contenido_curiosidades">
+      <div>
+        <img
+          class="curisidades_imagenes"
+          src="/img/CATDRAWING_1.jpg"
+          alt="gatito_uno"
+        />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae autem
+        itaque dolores quos minus tempore fugit quo iste. Esse, distinctio
+        quaerat ducimus mollitia iusto saepe ipsa magnam facilis ut iure.
+      </div>
+      <div>
+        <img
+          class="curisidades_imagenes"
+          src="img/CATDRAWING_2.jpg"
+          alt="gatito_dos"
+        />
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis
+        voluptates sunt quia cupiditate corporis ipsum rerum adipisci, libero
+        itaque officia perferendis assumenda? Quaerat et, rerum laboriosam quasi
+        ex aperiam!
+      </div>
+      <div>
+        <img
+          class="curisidades_imagenes"
+          src="/img/CATDRAWING_3.jpg"
+          alt="gatito_tres"
+        />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, eveniet
+        beatae consequatur nobis perspiciatis eos quo quisquam, cum, voluptas
+        aut neque! Accusamus quae eos officia natus cum debitis quis rem?
+      </div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+    </div>
+
+    <!-- END CONTENT -->
 
     <!-- FOOTER -->
-    <footer class="footer">
-      miau
-     
-     </footer>
+    <footer class="footer">miau</footer>
     <!-- END FOOTER -->
-
   </body>
 </html>
