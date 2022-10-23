@@ -552,3 +552,43 @@ h1 {
         transform: scale(1.1);
     }
 /*END FOOTER*/
+
+/* pagina curisidades */
+
+.contenido_curiosidades {
+    background-color:#ffe8a8;
+    padding: 10px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-content: stretch;
+justify-content: center;
+align-items: center;
+
+
+}
+
+.contenido_curiosidades div{
+
+background-color:#ff9a87;
+padding: 20px;
+margin: 20px;
+min-width: 200px;
+max-width: 400px;
+border-radius: 5%;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-content: center;
+align-items: center;
+
+}
+
+.curisidades_imagenes {
+    max-width: 100%;
+    min-width: 50px;
+    min-width: 50px;
+    border-radius: 50%;
+}
+
+/* END PAGINA CURIOSIDADES */
