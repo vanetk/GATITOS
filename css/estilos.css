@@ -102,7 +102,8 @@ time,
 mark,
 audio,
 video {
-  font-family: Quicksand;
+  font-family: "Quicksand";
+  ;
   vertical-align: baseline;
 }
 
@@ -132,12 +133,12 @@ h1 {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        padding: 5px;
     
         /* HEADER ANIMATION scr: https://developer.mozilla.org/en-US/docs/Web/CSS/animation */
         background-color: #ff9a87;
         animation: 60s linear 0s infinite alternate animating-multiple-properties;
         margin: 0%;
-        padding: 1rem;
         /* END HEADER ANIMATION */
     }
     
@@ -161,7 +162,10 @@ h1 {
         border-radius: 50%;
         /* explicacion de animacion: https://linuxhint.com/rotate-animation-css/ */
         animation: 60s linear 0s infinite alternate rotation;
-        max-width: 600px;
+        width: 100%;
+        max-width: 300px;
+        min-width: 50px;
+        height: auto;
     }
     @keyframes rotation {
         from {
@@ -172,6 +176,30 @@ h1 {
         }
     }
 /* END LOGO ANIMATION*/
+
+/* FORMATO DE LA IMAGEN PATITAS */
+
+.patitas {
+    width:100%;
+    max-width: 300px;
+    min-width: 50px;
+    height: auto;
+}
+
+
+/* END FORMATO DE LA IMAGEN PATITAS */
+
+
+
+.titulo{
+    font-family: "KawaiiBubble-Regular";
+    min-width: 100px;
+   /* font-size: 60px; */
+   justify-content: center;
+
+}
+
+
 
 /* MENU */
     .menu-conteiner{
@@ -212,9 +240,9 @@ h1 {
     .menu-conteiner .menu button{
         font-weight: 700;
         font-size: 20px;
-        color: #ff9a87;
+        color: white;
         padding: 9px 25px;
-        background-color: #ffffbf;
+        background-color:#ff00a4;
         border: none;
         border-radius: 50px;
         cursor: pointer;
@@ -223,8 +251,9 @@ h1 {
 
     .menu-conteiner .boton button:hover,
     .menu-conteiner .menu button:hover{
-        background-color: #ffffbf;
-        color: #ff00a4;
+        background-color:#ffffbf;
+        color:#ff2f82;
+        font-weight: bold;
         transform: scale(1.1);
     }
 
@@ -282,7 +311,7 @@ h1 {
         justify-content: space-evenly;
         align-items: stretch;
         margin: 0px;
-        padding: 0rem;
+        padding: 0px;
         background-color: #ffffbf;
         justify-items: stretch;
         align-content: stretch;
@@ -290,8 +319,9 @@ h1 {
     .contenido div {
         display: grid;
         width: -webkit-fill-available;
-        padding: 0rem;
-        margin: 0rem;
+        padding: 10px;
+        margin-bottom: 3px;
+        min-height: 250px;
         justify-content: space-evenly;
         align-items: center;
         justify-items: stretch;
@@ -308,7 +338,12 @@ h1 {
         background-color: #ff9a87;
     }
 
+    #grid_1{
+        text-justify: distribute;
+    }
+
     /* CARDS */
+
         .card {
             outline: 1px solid rgba(255, 255, 255, 0.5);
             outline-offset: -8px;
@@ -323,6 +358,7 @@ h1 {
             justify-self: stretch;
             width: 100%;
             height: 100%;
+            min-height: 250px;
             object-fit: cover;
             opacity: 0.7;
             transition: transform 0.75s;
