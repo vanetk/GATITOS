@@ -163,7 +163,7 @@ h1 {
         /* explicacion de animacion: https://linuxhint.com/rotate-animation-css/ */
         animation: 60s linear 0s infinite alternate rotation;
         width: 100%;
-        max-width: 300px;
+        max-width: 450px;
         min-width: 20px;
         height: auto;
     }
@@ -181,7 +181,7 @@ h1 {
 
 .patitas {
     width:100%;
-    max-width: 300px;
+    max-width: 450px;
     min-width: 20px;
     height: auto;
 }
