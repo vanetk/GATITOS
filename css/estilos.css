@@ -591,7 +591,7 @@ h1 {
 
 /* pagina curisidades */
 
-.contenido_curiosidades {
+.contenido_curiosidades{
     background-color:#ffe8a8;
     padding: 10px;
 display: flex;
@@ -617,10 +617,22 @@ flex-wrap: wrap;
 justify-content: center;
 align-content: center;
 align-items: center;
-
+animation: movimiento 2.5s linear infinite;
 }
 
-.curisidades_imagenes {
+@keyframes movimiento{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.curiosidades_imagenes {
     max-width: 100%;
     min-width: 50px;
     min-width: 50px;
